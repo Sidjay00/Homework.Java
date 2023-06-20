@@ -5,13 +5,20 @@ public class task_2 {
         int i = 0;
         int num = 0;
         String primeNumbers = "";
+        System.out.println(primeNumbers);
 
         for (i = 1; i <= 1000; i++) {
+
             int counter = 0;
+            // System.out.println(counter);
+
             for (num = i; num >= 1; num--) {
                 if (i % num == 0) {
                     counter++;
+                    // System.out.println(counter);
                 }
+            System.out.println(counter);
+            
             }
             if (counter == 2) {
                 primeNumbers = primeNumbers + i + " ";
