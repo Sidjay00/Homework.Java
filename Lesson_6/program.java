@@ -1,4 +1,5 @@
 package Lesson_6;
+import java.util.ArrayList;
 
 public class program {
     public class Notebook {
@@ -62,19 +63,11 @@ public class program {
         }
         public void setHddSize(int hddSize) {
             this.hddSize = hddSize;
-        }
+        }        
+    }
+    public static void main(String[] args) {
+        ArrayList<Notebook> notebooks = new ArrayList<>();
+        notebooks.add(new Notebook("Apple", "MacBook Pro", 1999, 5, 15.9, 16, 512));
 
-        @Override
-        public String toString() {
-            return "Notebook{" + 
-                    "manufacturer='" + manufacturer + '\'' +
-                    ", model='" + model + '\'' +
-                    ", price='" + price +
-                    ", quantityInStock='" + quantityInStock +
-                    ", screenSize='" + screenSize +
-                    ", ramSize='" + ramSize +
-                    ", hddSize='" + hddSize +
-                    '}';
-        }
     }
 }
